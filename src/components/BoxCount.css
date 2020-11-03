@@ -1,0 +1,64 @@
+.box-count-container {
+    min-width: 67px;
+}
+
+.box-count-container > div {
+    text-align: center;
+    background-color: rgba(238, 213, 168, 0.8);
+    box-shadow: 4px 4px;
+    border: 2px solid brown;
+}
+
+.selected-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.count-arrow {
+    position: absolute;
+    right: 8px;
+    font-size: 1rem;
+    color: rgba(104, 0, 0, 0.8);
+    transition: 0.5s;
+    
+}
+
+.count-arrow.down {
+    transform-origin: center;
+    transform: rotate(180deg)
+}
+
+.box-count-dropdown {
+    height: 10rem;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    padding-top: 0.6rem;
+    
+  
+}
+
+.box-count-dropdown.closed {
+    height: 0;
+    border: none;
+    padding-top: 0;
+}
+
+.count-option {
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.count-option:hover {
+    background-color: rgba(165, 91, 42, 0.5);
+}
+
+.count-option > span {
+    width: 100%;
+}
+
